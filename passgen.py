@@ -1,7 +1,7 @@
 import string as str
 import secrets
 import random  # this is the module used to generate random numbers on your given range
-
+import sys
 
 class PasswordGenerator:
     @staticmethod
@@ -68,7 +68,7 @@ def list_to_vertical_string(list):
 
 class Run:
     def decide_operation(self):
-        user_input = str(sys.argv[1]
+        user_input = sys.argv[1]
         try:
             int(user_input)
         except:
