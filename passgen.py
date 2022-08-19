@@ -68,7 +68,7 @@ def list_to_vertical_string(list):
 
 class Run:
     def decide_operation(self):
-        user_input = input(": ")
+        user_input = str(sys.argv[1]
         try:
             int(user_input)
         except:
@@ -88,8 +88,8 @@ commands to change the characters to be used to generate passwords:
 {list_to_vertical_string(Interface.has_characters.keys())}
             """
         print(menu)
-        while True:
-            self.decide_operation()
+#        while True:
+        self.decide_operation()
 
 
 Run().run()
